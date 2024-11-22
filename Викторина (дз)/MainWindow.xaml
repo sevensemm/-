@@ -1,0 +1,38 @@
+﻿<Window x:Class="Викторина__дз_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Викторина__дз_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock  TextWrapping="Wrap" Text="Сколько будет 4*3-2" Margin="0,0,28,418"/>
+        <RadioButton GroupName="Kv1" Content="4" Margin="0,16,28,402" Checked="RadioButton_Checked"/>
+        <RadioButton Name="Otv1" GroupName="Kv1" Content="10" Margin="0,32,28,386" Checked="RadioButton_Checked" RenderTransformOrigin="0.5,3.494"/>
+        <Separator Margin="0,0,28,337" Height="89" VerticalAlignment="Bottom"/>
+
+        <TextBlock TextWrapping="Wrap" Text="Сколько океанов на земле? " Margin="0,50,28,368"/>
+        <RadioButton GroupName="Kv2" Content="4" Margin="0,82,28,336" Checked="RadioButton_Checked"/>
+        <RadioButton Name="Otv2" GroupName="Kv2" Content="5" Margin="0,66,28,352" Checked="RadioButton_Checked" RenderTransformOrigin="0.5,3.494"/>
+        <RadioButton GroupName="Kv2" Content="3" Margin="70,81,10,337" Checked="RadioButton_Checked"/>
+        <RadioButton GroupName="Kv2" Content="6" Margin="70,66,10,352" Checked="RadioButton_Checked" RenderTransformOrigin="0.5,3.494"/>
+        <Separator Margin="0,54,0,285"/>
+
+        <TextBlock TextWrapping="Wrap" Text="Как называеться деление клетки?" Margin="0,109,28,309"/>
+        <RadioButton GroupName="Kv3" Content="хз" Margin="0,125,28,293" Checked="RadioButton_Checked"/>
+        <RadioButton Name="Otv3" GroupName="Kv3" Content="Митоз" Margin="0,141,28,277" Checked="RadioButton_Checked" RenderTransformOrigin="0.5,3.494"/>
+        <RadioButton GroupName="Kv3" Content="Регенерация" Margin="70,125,10,293" Checked="RadioButton_Checked"/>
+        <RadioButton GroupName="Kv3" Content="Депривация" Margin="70,141,10,277" Checked="RadioButton_Checked" RenderTransformOrigin="0.5,3.494"/>
+        <Separator Margin="0,117,0,222"/>
+
+        <TextBlock TextWrapping="Wrap" Text="Лучий предмет IT-HUB?" Margin="0,165,10,253"/>
+        <RadioButton GroupName="Kv4" Content="HTML" Margin="0,181,10,237" Checked="RadioButton_Checked"/>
+        <RadioButton GroupName="Kv4" Content="Физ-ра" Margin="0,196,10,222" Checked="RadioButton_Checked" RenderTransformOrigin="0.5,3.494"/>
+        <RadioButton Name="Otv4" GroupName="Kv4" Content="ООП С#" Margin="70,181,10,237" Checked="RadioButton_Checked"/>
+        <RadioButton GroupName="Kv4" Content="Английский с шульгой" Margin="70,197,10,221" Checked="RadioButton_Checked" RenderTransformOrigin="0.5,3.494"/>
+        <Separator Margin="0,170,0,169"/>
+        
+        <Button Content="Проверить" HorizontalAlignment="Left" Height="44" Margin="124,265,0,0" VerticalAlignment="Top" Width="374" Click="Button_Click"/>
+    </Grid>
+</Window>
